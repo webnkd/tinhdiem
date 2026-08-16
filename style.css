@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: boder-box;
+  --primary-color: #4a90e2;
+  --border-color: #e0e0e0;
+  --text-color: #333;
+  --bg-light: #f9f9f9;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px;
+  background-color: #f5f7fa;
+  color: var(--text-color);
+}
+#layout{
+  width: 400px;
+  /* background-color: blue; */
+}
+.table-container {
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Định dạng Bảng chính */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Tiêu đề bảng */
+.data-table th {
+    background-color: var(--bg-light);
+    color: #555;
+    font-weight: 600;
+    padding: 3px 6px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* Các ô dữ liệu */
+.data-table td {
+    padding: 3px 6px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+}
+
+/* Định dạng các ô nhập liệu bên trong bảng */
+.table-input {
+    width: 100%;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background-color: transparent;
+}
+
+/* Hiệu ứng khi rê chuột vào ô nhập liệu */
+.table-input:hover {
+    border-color: #ccc;
+    background-color: #fff;
+}
+
+/* Hiệu ứng khi nhấn chọn vào ô nhập liệu */
+.table-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+/* Định dạng các nút bấm */
+.btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.table-btn-tinh{
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+}
+.btn-tinh {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-tinh:hover {
+    background-color: #357abd;
+}
+
+.btn-delete {
+    background-color: #ff4d4f;
+    color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.btn-delete:hover {
+    background-color: #d9363e;
+}
+
+.actions-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.dgnl{
+  width: 400px;
+}
