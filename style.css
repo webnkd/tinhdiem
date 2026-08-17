@@ -21,7 +21,7 @@ body {
 }
 .table-container {
     background-color: #fff;
-    padding: 6px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     max-width: 1000px;
@@ -95,6 +95,7 @@ h3 {
     transition: background 0.2s;
 }
 .table-btn-tinh{
+    padding: 5px 0;
     display: flex;
     justify-content: center; /* Căn giữa theo chiều ngang */
     align-items: center;     /* Căn giữa theo chiều dọc */
@@ -125,4 +126,9 @@ h3 {
 }
 .dgnl{
   width: 400px;
+}
+.ketqua{
+  width: 100%;
+  background-color: #77a1fc;
+  border-radius: 4px;
 }

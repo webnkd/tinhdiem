@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Điểm - THM</title>
+    <title>Tính Điểm</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
   </head>
   <body>
       <div class="table-container">
-      <h3>Nhập điểm</h3>
-    
       <table class="data-table">
           <thead>
               <tr>
@@ -85,79 +83,83 @@
     
       <div class="dgnl">
         <label style="width: 70%;">Điểm thi đánh giá năng lực: </label><input type="number" style="width: 30%;" class="table-input" id="dgnl" value="0" min="0" max="1200" step="1" >
+     </div>
+      <div>
+       <label>Tốt nghiệp trước 2026 &nbsp;&nbsp; </label>
+        <input type="checkbox" id="namtn" value="2026"> 
       </div>
       <div class="table-btn-tinh">
-        <button class="btn btn-tinh" onclick="tinhDiem(this)">Tính điểm</button>
+        <button class="btn btn-tinh" onclick="tinhDiem(this)">Tính điểm dự kiến</button>
       </div>
-      
       
       <!-- Hiểm thị điểm  -->
       <table class="data-table">
         <thead>
             <tr>
                 <th >Ngành</th>
-                <th >XT1</th>
-                <th >XT2</th>
-                <th >XT3</th>
-                <th >XT4</th>
+                <th >Đ1</th>
+                <th >Đ2</th>
+                <th >Đ3</th>
+                <th >Đ4</th>
                 <th >TV</th>
             </tr>
         </thead>
-          <tbody id="table-body">
+        <tbody id="table-body">
             <tr>
-                <td>QTKD</td>
-                <td><label id="qtkd_dxt1"></label></td>
-                <td><label id="qtkd_dxt2"></label></td>
-                <td><label id="qtkd_dxt3"></label></td>
-                <td><label id="qtkd_dxt4"></label></td>
-                <td><label id="qtkd_dtv"></label></td>
+                <td>QT, KT</td>
+                <td><label id="nhom1_dxt1"></label></td>
+                <td><label id="nhom1_dxt2"></label></td>
+                <td><label id="nhom1_dxt3"></label></td>
+                <td><label id="nhom1_dxt4"></label></td>
+                <td><label id="nhom1_dtv"></label></td>
             </tr>
-            <tr>
-                <td>KT</td>
-                <td><label id="kt_dxt1"></label></td>
-                <td><label id="kt_dxt2"></label></td>
-                <td><label id="kt_dxt3"></label></td>
-                <td><label id="kt_dxt4"></label></td>
-                <td><label id="kt_dtv"></label></td>
-            </tr>
+            
             <tr>
                 <td>CNTT</td>
-                <td><label id="tin_dxt1"></label></td>
-                <td><label id="tin_dxt2"></label></td>
-                <td><label id="tin_dxt3"></label></td>
-                <td><label id="tin_dxt4"></label></td>
-                <td><label id="tin_dtv"></label></td>
+                <td><label id="nhom2_dxt1"></label></td>
+                <td><label id="nhom2_dxt2"></label></td>
+                <td><label id="nhom2_dxt3"></label></td>
+                <td><label id="nhom2_dxt4"></label></td>
+                <td><label id="nhom2_dtv"></label></td>
             </tr>
             <tr>
-                <td>COKHI</td>
-                <td><label id="ck_dxt1"></label></td>
-                <td><label id="ck_dxt2"></label></td>
-                <td><label id="ck_dxt3"></label></td>
-                <td><label id="ck_dxt4"></label></td>
-                <td><label id="ck_dtv"></label></td>
-            </tr>
-            <tr>
-                <td>OTO</td>
-                <td><label id="oto_dxt1"></label></td>
-                <td><label id="oto_dxt2"></label></td>
-                <td><label id="oto_dxt3"></label></td>
-                <td><label id="oto_dxt4"></label></td>
-                <td><label id="oto_dtv"></label></td>
-            </tr>
-            <tr>
-                <td>DIEN</td>
-                <td><label id="dien_dxt1"></label></td>
-                <td><label id="dien_dxt2"></label></td>
-                <td><label id="dien_dxt3"></label></td>
-                <td><label id="dien_dxt4"></label></td>
-                <td><label id="dien_dtv"></label></td>
+                <td>CK, OT, DI</td>
+                <td><label id="nhom3_dxt1"></label></td>
+                <td><label id="nhom3_dxt2"></label></td>
+                <td><label id="nhom3_dxt3"></label></td>
+                <td><label id="nhom3_dxt4"></label></td>
+                <td><label id="nhom3_dtv"></label></td>
             </tr>
 
-          </tbody>
+        </tbody>
+      </table>
+      <div class="ketqua">
+        <!-- <p>QT, KT: <span id="thm_nhom1"></span></p>
+        <p>CNTT: <span id="thm_nhom2"></span></p>
+        <p>CK, OTO, DI: <span id="thm_nhom3"></span></p> -->
+
+        <table class="data-table">
+        <tbody id="table-body">
+            <tr>
+                <td>QT, KT</td>
+                <td><label id="thm_nhom1"></label></td>
+            </tr>
+            
+            <tr>
+                <td>CNTT</td>
+                <td><label id="thm_nhom2"></label></td>
+            </tr>
+            <tr>
+                <td>CK, OT, DI</td>
+                <td><label id="thm_nhom3"></label></td>
+            </tr>
+
+        </tbody>
       </table>
 
+      </div>
     </div>
     
-    <!-- <script src="main.js"></script> -->
+    <script src="./main.js"></script>
   </body>
 </html>
