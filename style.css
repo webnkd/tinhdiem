@@ -11,14 +11,11 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 40px;
+  margin-top: 0px;
   background-color: #f5f7fa;
   color: var(--text-color);
 }
-#layout{
-  width: 400px;
-  /* background-color: blue; */
-}
+
 .table-container {
     background-color: #fff;
     padding: 5px;
