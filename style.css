@@ -81,6 +81,12 @@ h3 {
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
 }
 
+.table-btn{
+    padding: 6px 12px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+}
 /* Định dạng các nút bấm */
 .btn {
     padding: 10px 16px;
@@ -91,29 +97,29 @@ h3 {
     cursor: pointer;
     transition: background 0.2s;
 }
-.table-btn-tinh{
-    padding: 5px 0;
-    display: flex;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center;     /* Căn giữa theo chiều dọc */
-}
+
 .btn-tinh {
     background-color: var(--primary-color);
     color: white;
+    padding: 6px 12px;
+    font-size: 12px;
+    width: 150px;
+    margin-right: 20px; /* Khoảng cách giữa hai nút */
 }
 
 .btn-tinh:hover {
     background-color: #357abd;
 }
 
-.btn-delete {
+.btn-clean {
     background-color: #ff4d4f;
     color: white;
     padding: 6px 12px;
     font-size: 12px;
+    width: 150px;
 }
 
-.btn-delete:hover {
+.btn-clean:hover {
     background-color: #d9363e;
 }
 

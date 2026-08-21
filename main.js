@@ -547,3 +547,54 @@ function kiemTraPopup(el) {
     }
   }
 }
+
+function lamLai(button) {
+  document.getElementById("toan12").value="";
+  document.getElementById("toan").value="";
+  document.getElementById("ly12").value="";
+  document.getElementById("ly").value="";
+  document.getElementById("hoa12").value="";
+  document.getElementById("hoa").value="";
+  document.getElementById("van12").value="";
+  document.getElementById("van").value="";
+  document.getElementById("sinh12").value="";
+  document.getElementById("sinh").value="";
+  document.getElementById("su12").value="";
+  document.getElementById("su").value="";
+  document.getElementById("dia12").value="";
+  document.getElementById("dia").value="";
+  document.getElementById("anh12").value="";
+  document.getElementById("anh").value="";
+  document.getElementById("tin12").value="";
+  document.getElementById("tin").value="";
+  document.getElementById("ktpl12").value="";
+  document.getElementById("ktpl").value="";
+  document.getElementById("cncn12").value="";
+  document.getElementById("cncn").value="";
+  document.getElementById("cnnn12").value="";
+  document.getElementById("cnnn").value="";
+  document.getElementById("dgnl").value="";
+
+  document.getElementById("nhom1_dxt1").textContent="";
+  document.getElementById("nhom1_dxt2").textContent="";
+  document.getElementById("nhom1_dxt3").textContent="";
+  document.getElementById("nhom1_dxt4").textContent="";
+  document.getElementById("nhom1_dtv").textContent="";
+
+  document.getElementById("nhom2_dxt1").textContent="";
+  document.getElementById("nhom2_dxt2").textContent="";
+  document.getElementById("nhom2_dxt3").textContent="";
+  document.getElementById("nhom2_dxt4").textContent="";
+  document.getElementById("nhom2_dtv").textContent="";
+
+  document.getElementById("nhom3_dxt1").textContent="";
+  document.getElementById("nhom3_dxt2").textContent="";
+  document.getElementById("nhom3_dxt3").textContent="";
+  document.getElementById("nhom3_dxt4").textContent="";
+  document.getElementById("nhom3_dtv").textContent="";
+
+  document.getElementById("thm_nhom1").textContent="";
+  document.getElementById("thm_nhom2").textContent="";
+  document.getElementById("thm_nhom3").textContent="";  
+
+}
