@@ -17,7 +17,7 @@ body {
 }
 
 .table-container {
-    background-color: #fff;
+    background-color: #ebe8e8;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -64,13 +64,13 @@ h3 {
     border-radius: 4px;
     font-size: 14px;
     transition: all 0.2s ease;
-    background-color: transparent;
+    background-color: #fcfcfc;;
 }
 
 /* Hiệu ứng khi rê chuột vào ô nhập liệu */
 .table-input:hover {
     border-color: #ccc;
-    background-color: #fff;
+    background-color: #76f7f7;
 }
 
 /* Hiệu ứng khi nhấn chọn vào ô nhập liệu */
